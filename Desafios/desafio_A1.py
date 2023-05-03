@@ -1,6 +1,8 @@
 '''
 Exercício 1
-1) Calcule a nota final, dado que AP1 e AP2 tem peso 40% e AP3 20%
+1) Calcule a nota final, dado que 
+AP1 e AP2 tem peso 40% 
+e AP3 20%
 '''
 def calcular_nota_final(ap1, ap2, ap3):
     nota_final = ap1 * 0.4 + ap2 * 0.4 + ap3 * 0.2
@@ -17,7 +19,11 @@ print(f"Nota final: {nota_final}")
 
 '''
 Exercício 2
-2) Calcule a nota como conceito, com sendo A (maior que 9), B (entre 7 e 9), D (entre 5 e 7), F (abaixo disto)
+2) Calcule a nota como conceito, com sendo 
+A (maior que 9), 
+B (entre 7 e 9), 
+D (entre 5 e 7), 
+F (abaixo disto)
 '''
 def calcular_nota_conceito(nota): 
   if nota >= 9: 
@@ -58,7 +64,15 @@ irrf(salario)
 
 
 '''
-Uma loja apresenta um cartaz de um produto indicando o valor a vista, em comparação ao valor parcelado em 2 vezes (para 30 e 60 dias), mas não cumpre a resolução do Banco Central de apresentar a taxa de juros embutida bcb.gov.br/pre/normativos/busca/downloadNormativo.asp?arquivo=/L ists/Normativos/Attachments/48005/Res_3517_v1_O.pdf Crie uma função que dado valor a vista, o valor das parcelas, calcule o juros deste financiamento Atenção: Existem ao menos duas formas de resolução, uma de maneira algébrica, ou seja, desenvolva a equação. E outra de maneira por aproximação, seu programa vai testando soluções (não aleatórias) que vai se aproximando do resultado correto. Para esta opção, até 0.3% de erro no seu cálculo é aceito. Desafio: Utilizando o método de aproximação como solução, estenda seu programa para ao invés de trabalhar com apenas 2 parcelas, trabalhe com N.
+Uma loja apresenta um cartaz de um produto indicando o valor a vista, 
+em comparação ao valor parcelado em 2 vezes (para 30 e 60 dias), 
+mas não cumpre a resolução do Banco Central de apresentar a taxa de juros embutida 
+bcb.gov.br/pre/normativos/busca/downloadNormativo.asp?arquivo=/L ists/Normativos/Attachments/48005/Res_3517_v1_O.pdf 
+Crie uma função que dado valor a vista, o valor das parcelas, calcule o juros deste financiamento Atenção: 
+Existem ao menos duas formas de resolução, uma de maneira algébrica, ou seja, 
+desenvolva a equação. E outra de maneira por aproximação, seu programa vai testando soluções (não aleatórias) 
+que vai se aproximando do resultado correto. Para esta opção, até 0.3% de erro no seu cálculo é aceito. 
+Desafio: Utilizando o método de aproximação como solução, estenda seu programa para ao invés de trabalhar com apenas 2 parcelas, trabalhe com N.
 '''
 def calcular_taxa_juros(valor_vista, valor_parcelas, n_parcelas):
     margem_erro = 0.003
